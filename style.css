@@ -1,0 +1,116 @@
+.mainBody {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(207, 197, 207, 0.767);
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .container .mainrow{
+    height: 100%;
+    /* background-color: blueviolet; */
+  }
+
+  .content{
+    border-radius: 10px;
+  }
+
+  /* left Part CSS */
+
+ .leftPart{
+    background-color: rgb(64, 197  , 156) ;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .profileImage img {
+    /* Add your styles here */
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 70%; /* Make the image round */
+    border: 3px solid #333; /* Add a border */
+    display: block; /* Display block to remove bottom space */
+    margin: 0 auto; /* Center the image */
+    /* More styles can be added as needed */
+}
+
+.socialConnect{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socialConnect img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8; /* Icons are slightly transparent until hovered */
+    
+}
+
+.socialConnect img:hover {
+    transform: scale(1.2); /* Icon grows to 120% of its size */
+    opacity: 1; /* Icon becomes fully opaque */
+}
+
+.list-items{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+ul li a{
+    color: white;
+    transition: font-size 0.3s ease;
+    font-size: 16px;
+    display: block;
+    transform-origin: center;
+}
+
+ul li a:hover{
+    color: rgb(183, 236, 225);
+}
+
+/* Righpart CSS */
+
+  .rightPart{
+    background-color: blue;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    /* border-radius: 10px; */
+  }
+
+  .rightPart div{
+    background-color: rgb(248, 2, 2);
+    height: 100%;
+  }
+
+/* .rightPart div .mydetails{
+    background-color: rgb(237, 242, 243);
+    padding: 10px;
+    height: auto;
+   
+}
+*/
+.rightPart div .mydetails .profilePhoto img{
+    height: 270px;
+    width: 270px;
+    border-radius: 5%;
+    padding-right: 5px;
+}
+/*
+.rightPart .container-fluid .more-info{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 10px;
+    font-size: small;
+} */

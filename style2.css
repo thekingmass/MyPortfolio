@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body {
+  font-family: "Poppins", sans-serif;  
+  background-color: whitesmoke; 
+  margin: 10px;
+  
+  }
+
+.container{
+  display: grid;
+  grid-template-columns: 25% 45% 30%;
+  grid-template-rows: 40% 20% 40%;
+  gap: 0;
+  height: 100vh;
+}
+
+.grid-item{
+  background-color: #D3D3D3;
+  margin: 0;
+  padding: 0;
+}
+
+.title-info{
+  grid-row: span 3;
+  min-width: 200px;
+  background-color: rgb(65, 223, 170);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+
+.title-info h4{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.title-info img{
+  width: 200px; /* Set a fixed width */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 50%; /* Make the image round */
+  border: 3px solid #333; /* Add a border */
+  display: block;
+  margin: 0 auto;
+}
+
+.aboutText p{
+  margin-top: 10px;
+}
+
+/* Social Media Icons */
+.socialConnect{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.socialConnect img {
+  display: inline;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8; /* Icons are slightly transparent until hovered */
+  
+}
+
+.socialConnect img:hover {
+  transform: scale(1.2); /* Icon grows to 120% of its size */
+  opacity: 1; /* Icon becomes fully opaque */
+}
+
+.list-items{
+  margin-left: 5px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  transition: font-size 0.3s ease;
+  font-size: 16px;
+  display: block;
+  transform-origin: center;
+}
+
+ul li a:hover{
+  color: rgb(183, 236, 225);
+}
+
+
+
+.bio{
+  grid-column: span 2;
+  padding: 10px;
+  display: flex;
+  /* background-color: #f5f5f5; */
+  background-color: #E2E5DE;
+  border-top-right-radius: 5px;
+}
+.bio .bio-text{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bio img{
+  flex: 1;
+  height: 210px;
+  width: 210px;
+  padding-right: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+ 
+.whatIDo{
+  grid-column: span 2;
+  padding: 10px;
+}
+
+.skills{
+  grid-column: span 2;
+  display: flex;
+  border-bottom-right-radius: 5px;
+}
+
+.skill{
+  flex: 1;
+  text-align: center;
+  
+}
+
+@media (max-width:865px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-items{
+    text-align: center;
+  }
+
+  .profileImage img{
+    height: 150px;
+    width: 150px;
+  }
+
+  .bio img{
+   height: 100px;
+   width: 100px;
+  }
+}
+
+@media (max-width: 500px){
+  .skills{
+    flex-direction: column;
+  }
+
+  .skill{
+    margin: 20pz;
+  }
+}

@@ -18,7 +18,7 @@ body {
 }
 
 .grid-item{
-  background-color: #D3D3D3;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -99,13 +99,37 @@ ul li a:hover{
   padding: 10px;
   display: flex;
   /* background-color: #f5f5f5; */
-  background-color: #E2E5DE;
+  background-color: #f1f1f1;
   border-top-right-radius: 5px;
 }
 .bio .bio-text{
   flex: 1;
   justify-content: center;
   align-items: center;
+  /* display: flex; */
+}
+
+.btnclass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-button{
+  flex: 1;
+  margin: 5% 10%;
+  background-color: rgb(65, 197, 164);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  
+  cursor: pointer;
+  opacity: 8;
+}
+
+.resume-button:hover{
+  scale: 1.1;
+  opacity: 1;
 }
 
 
